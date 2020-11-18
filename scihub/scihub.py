@@ -40,7 +40,7 @@ class SciHub(object):
         self.sess = requests.Session()
         self.sess.headers = HEADERS
         self.available_base_url_list = self._get_available_scihub_urls()
-        self.base_url = self.available_base_url_list[0] + '/'
+        self.base_url = self.available_base_url_list[1] + '/'
 
     def _get_available_scihub_urls(self):
         '''
